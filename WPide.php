@@ -1532,7 +1532,7 @@ class wpide
 					jQuery(".wpide_tab[sessionrel='"+ jQuery(".wpide_tab[rel='"+file+"']").attr("sessionrel") +"']").click();//focus the already open tab
 				    }else{ //open file
 					
-					var image_patern =new RegExp("(\.jpg|\.gif|\.png|\.bmp)");
+					var image_patern = new RegExp("\\.(jpg|gif|png|bmp)$");
 					if ( image_patern.test(file) ){
 						//it's an image so open it for editing
 						
